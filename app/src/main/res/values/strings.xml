@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Clone facebook</string>
+    <string name="hint">Эл. адрес или телефон</string>
+</resources>

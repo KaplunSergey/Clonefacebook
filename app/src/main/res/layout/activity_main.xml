@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kaa_solutions.clonefacebook.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/imagefacebook"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorPrimary">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Українська • English • "
+        android:textSize="14dp"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/imagefacebook"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp"
+        android:text="Еще..."
+        android:layout_alignLeft="@id/textLang"
+        android:layout_alignBaseline="@+id/textLang"
+        android:layout_alignBottom="@+id/textLang"
+        android:layout_alignEnd="@+id/button2" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:hint="@string/hint"
+        android:textColorHint="@color/greyl"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_marginTop="13dp"
+        android:hint="Пароль"
+        android:textColorHint="@color/greyl"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:text="Войти"
+        android:textColor="@color/greyl"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textStyle="bold"
+        android:text="ЗАБЫЛИ ПАРОЛЬ?"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/greyl"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/button"
+        android:id="@+id/view"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="1dp"
+        android:background="@color/greyl"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:id="@+id/view2"
+        android:layout_alignEnd="@+id/button"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#696969"
+        android:text="OR"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:background="#32CD32"
+        android:text="СОЗДАТЬ АККАУНТ FACEBOOK"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+</RelativeLayout>
